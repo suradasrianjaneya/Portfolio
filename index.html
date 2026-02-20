@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>PortFolio</title>
   <style>
 #typing::after {
@@ -27,7 +28,7 @@
 <body class="bg-slate-950">
 <div>
   <header class="absolute inset-x-0 top-0 z-50">
-    <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+    <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8 fixed top-0 left-0 w-full bg-[#0B0F19] shadow-lg py-1">
       <div class="flex lg:flex-1">
         <a href="#" class="-m-1.5 p-1.5">
           <img src="images/Logo.png" alt="" class="h-14 w-auto" />
@@ -42,16 +43,16 @@
         </button>
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
-        <a href="#" class="text-sm/6 font-semibold text-gray-200 transition-all duration-300 hover:scale-110 hover:text-yellow-400">Home</a>
-        <a href="#" class="text-sm/6 font-semibold text-gray-200 transition-all duration-300 hover:scale-110 hover:text-yellow-400">About Me</a>
-        <a href="#" class="text-sm/6 font-semibold text-gray-200 transition-all duration-300 hover:scale-110 hover:text-yellow-400">Skills</a>
-        <a href="#" class="text-sm/6 font-semibold text-gray-200 transition-all duration-300 hover:scale-110 hover:text-yellow-400">Projects</a>
-        <a href="#" class="text-sm/6 font-semibold text-gray-200 transition-all duration-300 hover:scale-110 hover:text-yellow-400">Achievements</a>
-        <a href="#" class="text-sm/6 font-semibold text-gray-200 transition-all duration-300 hover:scale-110 hover:text-yellow-400">Coding Profile</a>
-        <a href="#" class="text-sm/6 font-semibold text-gray-200 transition-all duration-300 hover:scale-110 hover:text-yellow-400">Contact</a>
+        <a href="#home" class="text-sm/6 font-semibold text-gray-200 transition-all duration-300 hover:scale-110 hover:text-yellow-400">Home</a>
+        <a href="#about" class="text-sm/6 font-semibold text-gray-200 transition-all duration-300 hover:scale-110 hover:text-yellow-400">About Me</a>
+        <a href="#skills" class="text-sm/6 font-semibold text-gray-200 transition-all duration-300 hover:scale-110 hover:text-yellow-400">Skills</a>
+        <a href="#projects" class="text-sm/6 font-semibold text-gray-200 transition-all duration-300 hover:scale-110 hover:text-yellow-400">Projects</a>
+        <a href="#achievements" class="text-sm/6 font-semibold text-gray-200 transition-all duration-300 hover:scale-110 hover:text-yellow-400">Achievements</a>
+        <a href="#coding" class="text-sm/6 font-semibold text-gray-200 transition-all duration-300 hover:scale-110 hover:text-yellow-400">Coding Profile</a>
+        <a href="#contact" class="text-sm/6 font-semibold text-gray-200 transition-all duration-300 hover:scale-110 hover:text-yellow-400">Contact</a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" class="text-sm/6 font-semibold text-gray-200 transition-all duration-300 hover:scale-110 hover:text-yellow-400">Download Resume<span aria-hidden="true">&rarr;</span></a>
+        <a href="assets/Sri_Resume.pdf" download class="text-sm/6 font-semibold text-gray-200 transition-all duration-300 hover:scale-110 hover:text-yellow-400">Download Resume<span aria-hidden="true">&rarr;</span></a>
       </div>
     </nav>
     <el-dialog>
@@ -92,7 +93,7 @@
     </el-dialog>
   </header>
 
-  <div class="relative isolate pt-14 pw-full">
+  <div class="relative isolate pt-14 pw-full" id="home">
     <div aria-hidden="true" class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
       <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-cyan-500 to-blue-600
  opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75"></div>
@@ -135,6 +136,450 @@
     </div>
   </div>
 </div>
+<!-- ABOUT SECTION -->
+<section id="about" class="bg-slate-950 text-white py-20 px-6">
+
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+    <!-- LEFT IMAGE -->
+    <div class="flex justify-center">
+      <img 
+        src="https://images.unsplash.com/photo-1555066931-4365d14bab8c"
+        alt="developer workspace"
+        class="rounded-2xl shadow-2xl w-full max-w-md object-cover"
+      >
+    </div>
+
+    <!-- RIGHT TEXT -->
+    <div>
+
+      <h2 class="text-4xl font-bold mb-6 text-yellow-400">
+        About Me
+      </h2>
+
+      <p class="text-gray-300 leading-relaxed mb-4">
+        I am a third-year Computer Science student passionate about building
+        full-stack web applications and solving real-world problems.
+      </p>
+
+      <p class="text-gray-300 leading-relaxed mb-4">
+        I have developed projects such as a Digital Voting Platform and a
+        Student Collaboration Hub using 
+        <span class="text-blue-400 font-semibold">React</span>,
+        <span class="text-blue-400 font-semibold">Node.js</span>,
+        <span class="text-blue-400 font-semibold">Express</span>, and
+        <span class="text-blue-400 font-semibold">MongoDB</span>.
+      </p>
+
+      <p class="text-gray-300 leading-relaxed">
+        Currently, I am improving my Data Structures & Algorithms skills and
+        preparing for Software Engineer roles while continuously learning
+        modern web technologies.
+      </p>
+
+
+      <!-- INFO BOXES -->
+      <div class="flex flex-wrap gap-4 mt-8">
+
+        <div class="bg-yellow-400 text-slate-950 px-5 py-3 rounded-lg shadow-md">
+        <i class="fa-solid fa-diagram-project"></i> 3+ Projects Built
+        </div>
+
+        <div class="bg-yellow-400 text-slate-950 px-5 py-3 rounded-lg shadow-md">
+           <i class="fa-solid fa-code"></i> Full Stack Developer
+        </div>
+
+        <div class="bg-yellow-400 text-slate-950 px-5 py-3 rounded-lg shadow-md">
+           <i class="fa-solid fa-briefcase"></i> Open to Internship
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- SKILLS SECTION -->
+<section id="skills" class="bg-[#0B0F19] text-white py-20 px-6 scroll-mt-24">
+
+  <div class="max-w-6xl mx-auto text-center">
+
+    <!-- TITLE -->
+    <h2 class="text-4xl font-bold mb-4 text-yellow-200">Skills</h2>
+    <p class="text-gray-400 mb-12">
+      Technologies and tools I work with
+    </p>
+
+    <!-- SKILLS GRID -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+
+      <!-- HTML -->
+      <div class="bg-[#111827] p-6 rounded-xl shadow-lg hover:scale-105 transition">
+        <i class="fa-brands fa-html5 text-4xl text-orange-500 mb-3"></i>
+        <p>HTML</p>
+      </div>
+
+      <!-- CSS -->
+      <div class="bg-[#111827] p-6 rounded-xl shadow-lg hover:scale-105 transition">
+        <i class="fa-brands fa-css3-alt text-4xl text-blue-500 mb-3"></i>
+        <p>CSS</p>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="bg-[#111827] p-6 rounded-xl shadow-lg hover:scale-105 transition">
+        <i class="fa-brands fa-js text-4xl text-yellow-400 mb-3"></i>
+        <p>JavaScript</p>
+      </div>
+
+      <!-- React -->
+      <div class="bg-[#111827] p-6 rounded-xl shadow-lg hover:scale-105 transition">
+        <i class="fa-brands fa-react text-4xl text-cyan-400 mb-3"></i>
+        <p>React</p>
+      </div>
+
+      <!-- Node -->
+      <div class="bg-[#111827] p-6 rounded-xl shadow-lg hover:scale-105 transition">
+        <i class="fa-brands fa-node-js text-4xl text-green-500 mb-3"></i>
+        <p>Node.js</p>
+      </div>
+
+      <!-- Express -->
+      <div class="bg-[#111827] p-6 rounded-xl shadow-lg hover:scale-105 transition">
+        <i class="fa-solid fa-server text-4xl text-gray-300 mb-3"></i>
+        <p>Express.js</p>
+      </div>
+
+      <!-- MongoDB -->
+      <div class="bg-[#111827] p-6 rounded-xl shadow-lg hover:scale-105 transition">
+        <i class="fa-solid fa-database text-4xl text-green-400 mb-3"></i>
+        <p>MongoDB</p>
+      </div>
+
+      <!-- Git -->
+      <div class="bg-[#111827] p-6 rounded-xl shadow-lg hover:scale-105 transition">
+        <i class="fa-brands fa-git-alt text-4xl text-red-500 mb-3"></i>
+        <p>Git</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- PROJECTS SECTION -->
+<section id="projects" class="bg-[#0B0F19] text-white py-20 px-6 scroll-mt-24">
+
+  <div class="max-w-6xl mx-auto text-center">
+
+    <!-- TITLE -->
+    <h2 class="text-4xl font-bold mb-4 text-yellow-200">Projects</h2>
+    <p class="text-gray-400 mb-12">Some of the applications I have built</p>
+
+    <!-- PROJECT GRID -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+
+      <!-- CAMPUS NETWORK -->
+      <div class="bg-[#111827] rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
+
+        <img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df" alt="Laptop screen displaying a digital voting interface with ballot options and submission button, set in a modern office environment with soft lighting"
+        class="h-48 w-full object-cover">
+
+        <div class="p-6 text-left">
+          <h3 class="text-xl font-semibold mb-2">Campus Network</h3>
+
+          <p class="text-gray-400 mb-4">
+            A full-stack student collaboration platform with Lost & Found,
+            marketplace, announcements, and event management.
+          </p>
+
+          <p class="text-sm text-blue-400 mb-4">
+            React • Node.js • Express • MongoDB
+          </p>
+
+          <div class="flex gap-4">
+            <a href="https://github.com/suradasrianjaneya/campus-network" class="bg-yellow-400 px-4 py-2 rounded hover:bg-yellow-600 text-slate-950">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- DIGITAL VOTING -->
+      <div class="bg-[#111827] rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
+
+        <img src="https://plus.unsplash.com/premium_photo-1704583083883-515a77e7c16f?q=80&w=2232&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        class="h-48 w-full object-cover">
+
+        <div class="p-6 text-left">
+          <h3 class="text-xl font-semibold mb-2">Digital Voting Platform</h3>
+
+          <p class="text-gray-400 mb-4">
+            Secure online voting system with authentication, voter validation,
+            and result calculation to ensure transparent elections.
+          </p>
+
+          <p class="text-sm text-blue-400 mb-4">
+            HTML • CSS • JavaScript • MySQL • Xampp
+          </p>
+
+          <div class="flex gap-4">
+            <a href="https://github.com/suradasrianjaneya/Digital-Voting" class="bg-yellow-400 px-4 py-2 rounded hover:bg-yellow-600 text-slate-950">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- BUS TRACKING -->
+      <div class="bg-[#111827] rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
+
+        <img src="https://images.unsplash.com/photo-1509749837427-ac94a2553d0e"
+        class="h-48 w-full object-cover">
+
+        <div class="p-6 text-left">
+          <h3 class="text-xl font-semibold mb-2">Real-Time Bus Tracking</h3>
+
+          <p class="text-gray-400 mb-4">
+            A transport monitoring system that tracks buses in real time and
+            displays live location updates for passengers.
+          </p>
+
+          <p class="text-sm text-blue-400 mb-4">
+            React • Node.js • Maps API • MongoDB
+          </p>
+
+          <div class="flex gap-4">
+            <a href="#" class="bg-yellow-400 px-4 py-2 rounded hover:bg-yellow-600 text-slate-950">GitHub</a>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+</section>
+<!-- ACHIEVEMENTS SECTION -->
+<section id="achievements" class="bg-[#0B0F19] text-white py-20 px-6 scroll-mt-24">
+
+  <div class="max-w-6xl mx-auto text-center">
+
+    <h2 class="text-4xl font-bold mb-4 text-yellow-200">Achievements</h2>
+    <p class="text-gray-400 mb-12">Awards and recognitions I have received</p>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+
+      <!-- TECHNOVA -->
+      <div class="bg-[#111827] rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
+
+        <!-- REPLACE WITH YOUR IMAGE -->
+        <img src="images/Logo.png" class="h-56 w-full object-cover">
+
+        <div class="p-6 text-left">
+          <h3 class="text-xl font-semibold mb-2">
+            🏆 Winner – Technova Hackathon 2025
+          </h3>
+
+          <p class="text-gray-400">
+            Won the Technova Hackathon conducted at ANITS College by developing
+            an innovative technical solution and presenting it successfully.
+          </p>
+        </div>
+
+      </div>
+
+
+      <!-- CODE COLOSSEUM -->
+      <div class="bg-[#111827] rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
+
+        <img src="images/Logo.png" class="h-56 w-full object-cover">
+
+        <div class="p-6 text-left">
+          <h3 class="text-xl font-semibold mb-2">
+            🏆 Winner – Code Colosseum
+          </h3>
+
+          <p class="text-gray-400">
+            Secured first place in Code Colosseum, a competitive programming
+            event focused on problem-solving and coding efficiency.
+          </p>
+        </div>
+
+      </div>
+
+
+      <!-- C LANGUAGE COMPETITION -->
+      <div class="bg-[#111827] rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
+
+        <img src="images/Logo.png" class="h-56 w-full object-cover">
+
+        <div class="p-6 text-left">
+          <h3 class="text-xl font-semibold mb-2">
+            🏆 Winner – C Language Coding Competition
+          </h3>
+
+          <p class="text-gray-400">
+            Achieved first place in a coding competition focused on C programming,
+            demonstrating strong logical thinking and problem-solving skills.
+          </p>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+</section>
+<!-- CODING PROFILE SECTION -->
+<section id="coding" class="bg-[#0B0F19] text-white py-20 px-6 scroll-mt-24">
+
+  <div class="max-w-6xl mx-auto text-center">
+
+    <h2 class="text-4xl font-bold mb-4">Coding Profiles</h2>
+    <p class="text-gray-400 mb-12">
+      Competitive programming and development platforms I actively use
+    </p>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+
+      <!-- LEETCODE -->
+      <div class="bg-[#111827] rounded-xl p-7 shadow-lg hover:scale-105 transition">
+        <i class="fa-solid fa-code text-5xl text-yellow-400 mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">LeetCode</h3>
+        <p class="text-gray-400 mb-4">
+          Solved <span class="text-yellow-400 font-bold">100+ problems</span>
+          covering DSA and interview questions.
+        </p>
+        <a href="https://leetcode.com/suradasrianjaneya" target="_blank"
+        class="inline-block bg-yellow-500 text-black px-5 py-2 rounded hover:bg-yellow-400 font-semibold">
+          View Profile
+        </a>
+      </div>
+
+
+      <!-- HACKERRANK -->
+      <div class="bg-[#111827] rounded-xl p-7 shadow-lg hover:scale-105 transition">
+        <i class="fa-brands fa-hackerrank text-5xl text-green-400 mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">HackerRank</h3>
+        <p class="text-gray-400 mb-4">
+          Practicing coding challenges and strengthening problem-solving skills.
+        </p>
+        <a href="https://www.hackerrank.com/suradasrianjaneya" target="_blank"
+        class="inline-block bg-green-500 text-black px-5 py-2 rounded hover:bg-green-400 font-semibold">
+          View Profile
+        </a>
+      </div>
+
+
+      <!-- CODEFORCES -->
+      <div class="bg-[#111827] rounded-xl p-7 shadow-lg hover:scale-105 transition">
+        <i class="fa-solid fa-trophy text-5xl text-blue-400 mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">Codeforces</h3>
+        <p class="text-gray-400 mb-4">
+          Participating in contests and improving algorithmic thinking.
+        </p>
+        <a href="https://codeforces.com/profile/suradasrianjaneya" target="_blank"
+        class="inline-block bg-blue-500 px-5 py-2 rounded hover:bg-blue-400 font-semibold">
+          View Profile
+        </a>
+      </div>
+
+
+      <!-- GITHUB -->
+      <div class="bg-[#111827] rounded-xl p-7 shadow-lg hover:scale-105 transition">
+        <i class="fa-brands fa-github text-5xl mb-4"></i>
+        <h3 class="text-xl font-semibold mb-2">GitHub</h3>
+        <p class="text-gray-400 mb-4">
+          Source code for my projects, experiments, and full-stack apps.
+        </p>
+        <a href="https://github.com/suradasrianjaneya" target="_blank"
+        class="inline-block border border-gray-500 px-5 py-2 rounded hover:bg-gray-700">
+          Visit GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CONTACT SECTION -->
+<section id="contact" class="bg-[#0B0F19] text-white py-20 px-6 scroll-mt-24">
+
+  <div class="max-w-4xl mx-auto text-center">
+
+    <h2 class="text-4xl font-bold mb-4">Contact Me</h2>
+    <p class="text-gray-400 mb-12">
+      Feel free to reach out for internships, collaboration, or opportunities
+    </p>
+
+
+    <!-- CONTACT INFO -->
+    <div class="grid md:grid-cols-3 gap-8 mb-12">
+
+      <!-- EMAIL -->
+      <a href="mailto:suradasrianjaneya@gmail.com"
+      class="bg-[#111827] p-6 rounded-xl hover:scale-105 transition block">
+
+        <i class="fa-solid fa-envelope text-3xl text-blue-400 mb-3"></i>
+        <p class="font-semibold">Email</p>
+        <p class="text-gray-400 text-sm">suradasrianjaneya@gmail.com</p>
+
+      </a>
+
+
+      <!-- LINKEDIN -->
+      <a href="https://linkedin.com/in/srianjaneyasurada" target="_blank"
+      class="bg-[#111827] p-6 rounded-xl hover:scale-105 transition block">
+
+        <i class="fa-brands fa-linkedin text-3xl text-blue-500 mb-3"></i>
+        <p class="font-semibold">LinkedIn</p>
+        <p class="text-gray-400 text-sm">Connect with me</p>
+
+      </a>
+
+
+      <!-- GITHUB -->
+      <a href="https://github.com/suradasrianjaneya" target="_blank"
+      class="bg-[#111827] p-6 rounded-xl hover:scale-105 transition block">
+
+        <i class="fa-brands fa-github text-3xl mb-3"></i>
+        <p class="font-semibold">GitHub</p>
+        <p class="text-gray-400 text-sm">View my repositories</p>
+
+      </a>
+
+    </div>
+
+
+
+    <!-- CONTACT FORM -->
+    <form class="bg-[#111827] p-8 rounded-xl text-left" action="https://formspree.io/f/xgejpqjw" method="POST">
+
+      <div class="grid md:grid-cols-2 gap-6 mb-6">
+
+        <input name="name" type="text" placeholder="Your Name"
+        class="w-full p-3 rounded bg-[#0B0F19] border border-gray-700 focus:outline-none">
+
+        <input name="email" type="email" placeholder="Your Email"
+        class="w-full p-3 rounded bg-[#0B0F19] border border-gray-700 focus:outline-none">
+
+      </div>
+
+      <textarea name="message" placeholder="Your Message" rows="4"
+      class="w-full p-3 rounded bg-[#0B0F19] border border-gray-700 mb-6 focus:outline-none"></textarea>
+
+      <button type="submit"
+      class="bg-blue-600 px-6 py-3 rounded hover:bg-blue-500 font-semibold">
+        Send Message
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
 <script>
 const words = [
   "Sri Anjaneya",
@@ -171,6 +616,5 @@ function typeEffect() {
 
 typeEffect();
 </script>
-
 </body>
 </html>
